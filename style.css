@@ -1,0 +1,155 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(235,235,235);
+}
+
+.main{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+
+}
+
+.sidebar{
+  flex-basis: 0.15;
+  width: 15%;
+  background-color: rgb(216 216 216 / 40%);
+  z-index: 999;
+  padding: 6% 3%;
+}
+
+.sidebar .title{
+  font-weight: bold;
+  margin-bottom: 10vh;
+}
+
+.sidebar ul{
+  list-style-type: none;
+  margin-top: 80px;
+
+}
+
+.sidebar ul li{
+  color: rgb(125, 124, 124);
+  font-family: sans-serif;
+  padding: 6px 0px;
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.sidebar ul li img{
+  width: 15px;
+  height: 15px;
+  margin-right: 15px;
+}
+
+.dashboard{
+  flex-basis: 0.85;
+  width: 85%;
+  position: relative;
+
+}
+
+.dashboard .dash{
+  border-radius:16px;
+  background: white;
+  height: 90vh;
+  width: 96vw;
+  position: absolute;
+  top: 5%;
+  right: 2%;
+  z-index: 0;
+
+}
+
+.dashboard .dash .container{
+  padding: 20px 20px 20px 190px;
+}
+
+.dashboard .dash .container h3{
+  margin-top : 10px;
+  margin-left: 10px;
+}
+
+
+.dashboard .dash .header{
+  border-bottom: 1px rgb(170,170,170) solid;
+  height: 12vh;
+}
+
+
+.dashboard .dash .cards{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+
+}
+
+
+.dashboard .dash .cards .card{
+  border-radius: 15px;
+  /* border : 1px solid black; */
+  width: 25vw;
+  height: 130px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.dashboard .dash .cards .card:nth-child(1){
+  background-color: rgba(72, 133, 50,0.5);
+}
+
+.dashboard .dash .cards .card:nth-child(2){
+  background-color: rgba(138, 162, 219,0.5);
+}
+
+.dashboard .dash .cards .card:nth-child(3){
+  background-color: rgba(229, 156, 91,0.5);
+}
+
+
+.dashboard .dash .cards .card .left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dashboard .dash .cards .card .left h3{
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.dashboard .dash .cards .card .left p span{
+  font-weight: bold;
+}
+
+.dashboard .dash .cards .card .left img{
+  width: 50px;
+  height: 50px;
+}
+
+.dashboard .dash .cards .card .right{
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+}
+
+.dashboard .dash .cards .card .right img{
+  width: 40px;
+  height: 40px;
+}
+
+.dashboard .dash .cards .card .right .menu{
+  transform: rotate(90deg);
+  width: 20px;
+  height: 20px;
+  margin-bottom: 15px;
+  margin-left: 80%;
+}
